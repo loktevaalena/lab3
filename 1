@@ -1,0 +1,19 @@
+foot_dict= {
+   'Россия': 'А' ,
+   'Португалия': 'В' ,
+   'Франция': 'С' ,
+   'Дания': 'С' ,
+   'Египет': 'А' ,
+}
+foot_dict['Турция']='В'
+print(foot_dict)
+
+group=input()
+for i in foot_dict:
+   if foot_dict[i]==group:
+      print(i)
+unig=list(set(foot_dict.values()))
+ug=dict.fromekeys(unig,0)
+for i in foot_dict:
+   ug[foot_dict[i]]+=1
+print(ug)
