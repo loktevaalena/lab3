@@ -64,7 +64,6 @@ if gender == 'G':
 with open('run_of_60_m.txt', 'r') as file:
  for runner in runnersMarked:
   file.write(" ".join([runner["name"],
-                runner["sex"],
                 runner["class"],
                 str(runner["time"]),
                 str(runner["mark"])+"\n"]))
