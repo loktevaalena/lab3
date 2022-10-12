@@ -4,7 +4,7 @@ with open('run_of_60_m.txt', 'r') as file:
   line = line.rstrip('\n')
   name, gender, class, time = line.split()
   runner = {
-  'name': name
+  'surname': name
   'gender': gender
   'class': class
   'time'= time
@@ -54,7 +54,7 @@ with open('run_of_60_m.txt', 'r') as file:
 
 #даюбавление оценки
 runner['mark'] = str(mark)
-runners.append(person)
+runners.append(runner)
 if gender == 'G':
  if float(bestG['time']) > time:
   bestG = runner
